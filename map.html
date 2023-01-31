@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map In JS</title>
+    <script>
+        var arr = [1,2,3,4,5,6,7,8,9];
+        console.log('Original  Array :  ' + arr);
+
+        //using map function
+
+        var newArr = arr.map(multiplyBy10);
+        
+        console.log('Array with multiply by 10 : '  + newArr);
+
+         function multiplyBy10(arrEle) {
+            return arrEle*10;
+        };
+
+        var data = [
+            {'firstName' : 'sachin', 'lastName' : 'gaikwad', 'age' : 23},
+            {'firstName' : 'akshay', 'lastName' : 'narote', 'age' : 24},
+            {'firstName' : 'deepak', 'lastName' : 'suryatale', 'age' : 25},
+            {'firstName' : 'avneet', 'lastName' : 'kudmethe', 'age' : 26} 
+        ];
+
+        var newData = data.map(modifyData);
+
+            function modifyData(obj) {
+                return obj.firstName +  " : " + obj.age;    
+            }
+
+        console.log(newData);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

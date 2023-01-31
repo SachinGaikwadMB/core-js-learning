@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Attribute Value</title>
+
+    <script>
+
+        function turnOn() {
+        document.getElementById('demo').src = 'https://www.w3schools.com/js/pic_bulbon.gif';
+        }
+
+        function turnOff() {
+        document.getElementById('demo').src = 'https://www.w3schools.com/js/pic_bulboff.gif';
+        
+        }
+    </script>
+
+</head>
+<body>
+
+    <button onclick="turnOn()">
+        turn on light
+    </button>
+        <img id="demo" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="bulf">
+    <button onclick="turnOff()">
+        turn off light
+    </button>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constant With Arrays and Objects</title>
+</head>
+
+<script>
+    const student = ['sachin', 'vaibhav', 'prafull'];
+    
+    // we can assign elemenet by element but can not assign all aaraya value at a time.
+    console.log(student);
+
+    student[0]='ajay';
+    student[1]='shubham';
+    student[2]='madhav';
+
+    console.log(student);
+
+    const products = {
+        'name': 'fancy T shirt',
+        'unitPrice' : 450,
+        'stockInunits' : 16,
+
+    };
+
+    products.stockInunits = 20;
+
+    console.log(products);
+    products = {};
+
+</script>
+<body>
+    
+</body>
+</html>
